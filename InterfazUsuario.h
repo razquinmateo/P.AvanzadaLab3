@@ -3,6 +3,8 @@
 
 #include <string>
 #include <iostream>
+#include "DataDesarrollador.h"
+#include "DataJugador.h"
 
 using namespace::std;
 
@@ -14,8 +16,8 @@ class InterfazUsuario
 
         //Funciones del controlador
         virtual void pedirCredencialesDelUsuario(string, string) = 0;
-        virtual void datosUsuarioEsDesarrollador(string) = 0;
-        virtual void datosUsuarioEsJugador(string, string) = 0;
+        virtual void datosUsuarioEsDesarrollador(DataDesarrollador) = 0;
+        virtual void datosUsuarioEsJugador(DataJugador) = 0;
         virtual void reingresarNickname(string) = 0;
 };
 

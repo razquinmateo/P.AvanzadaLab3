@@ -6,6 +6,8 @@
 #include "Jugador.h"
 #include <string>
 #include <vector>
+#include "DataDesarrollador.h"
+#include "DataJugador.h"
 
 using namespace::std;
 
@@ -14,13 +16,13 @@ class ControladorUsuario : public InterfazUsuario
     public:      
         //Metodos de la interfaz y controlador
         void pedirCredencialesDelUsuario(string, string);
-        bool tipoDeUsuarioDesarrollador(string);
+        bool tipoDeUsuarioDesarrollador(DataDesarrollador);
         void reingresarNickname(string);
-        void datosUsuarioEsDesarrollador(string);
-        void datosUsuarioEsJugador(string, string);
+        void datosUsuarioEsDesarrollador(DataDesarrollador);
+        void datosUsuarioEsJugador(DataJugador);
         void cancelarRegistroDelJugador();
-        void darAltaUsuarioEsDesarrollador(string);
-        void darAltaUsuarioJugador(string, string);
+        void darAltaUsuarioEsDesarrollador(DataDesarrollador);
+        void darAltaUsuarioJugador(DataJugador);
         void cancelarAltaUsuario();
         void cancelarInicioDeSesion();
 
